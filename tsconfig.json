@@ -1,0 +1,110 @@
+/**
+ * This file is the primary tsconfig entry point for typical PhET simulations or libraries.
+ *
+ * @author Sam Reid (PhET Interactive Simulations)
+ * @author Michael Kauzmann (PhET Interactive Simulations)
+ */
+{
+  "extends": "../perennial-alias/tsconfig/tsconfig-core.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Allow accessing UMD globals from modules. */
+    "allowUmdGlobalAccess": true,
+
+    "emitDeclarationOnly": false,
+  },
+  // Entry points from build.json, see chipper/build.json
+  "include": [
+    "src/scenery.ts",
+    "src/phet-core/js/**/*",
+    "src/axon/js/**/*",
+    "src/dot/js/**/*",
+    "src/kite/js/**/*",
+    "src/utterance-queue/js/**/*",
+    "src/scenery/js/**/*",
+
+    /* Tandem allowlist */
+    "src/tandem/js/types/**/*",
+    "src/tandem/js/tandemNamespace.ts",
+    "src/tandem/js/PhetioAction.ts",
+    "src/tandem/js/Tandem.ts",
+    "src/tandem/js/PhetioObject.ts",
+    "src/tandem/js/TandemConstants.*",
+    "src/tandem/js/DescriptionRegistry.ts",
+    "src/tandem/js/EventType.ts",
+    "src/tandem/js/LinkedElementIO.ts",
+    "src/tandem/js/phetioAPIValidation.ts",
+    "src/tandem/js/IOTypeCache.ts",
+    "src/tandem/js/PhetioDataHandler.ts",
+    "src/tandem/js/TPhetioStateEngine.ts",
+    "src/tandem/js/isPhetioStateEngineManagingPropertyValuesProperty.ts",
+    "src/tandem/js/phetioElementSelectionProperty.*",
+    "src/tandem/js/DynamicTandem.*",
+    "src/tandem/js/isClearingPhetioDynamicElementsProperty.*",
+    "src/tandem/js/isSettingPhetioStateProperty.*",
+    "src/tandem/js/PhetioConstants.*",
+    "src/tandem/js/PhetioDynamicElementContainer.*",
+    "src/tandem/js/CouldNotYetDeserializeError.*",
+
+    /* Joist allowlist */
+    "src/joist/js/joist.ts", // namespace
+    "src/joist/js/packageJSON.ts",
+    "src/joist/js/i18n/**/*",
+
+    /* Phetcommon allowlist */
+    "src/phetcommon/js/phetcommon.*", // namespace
+    "src/phetcommon/js/util/StringUtils.*",
+    "src/phetcommon/js/view/ModelViewTransform2.ts",
+    "src/phetcommon/js/model/Bucket.ts",
+    "src/phetcommon/js/model/Fraction.ts",
+    "src/phetcommon/js/model/SphereBucket.ts",
+
+    /* Sherpa allowlist */
+    "src/sherpa/lib/himalaya-1.1.0.js"
+  ],
+  "exclude": [
+    /* Tests */
+    "src/phet-core/js/**/*Tests.ts",
+    "src/axon/js/**/*-tests.ts",
+    "src/dot/js/**/*Tests.ts",
+    "src/kite/js/**/*Tests.ts",
+    "src/kite/js/kite-tests.*",
+    "src/utterance-queue/js/utterance-queue-tests.*",
+    "src/scenery/js/**/*Tests.ts",
+    "src/scenery/js/scenery-tests.*",
+    "src/scenery/js/tests/**/*",
+
+    /* Mains */
+    "src/dot/js/dot-main.*",
+    "src/dot/js/main.*",
+    "src/kite/js/kite-main.*",
+    "src/kite/js/main.*",
+    "src/utterance-queue/js/main.*",
+    "src/utterance-queue/js/utterance-queue-main.*",
+    "src/scenery/js/scenery-main.*",
+    "src/scenery/js/main.*",
+
+    /* Grunt / Node */
+    "src/dot/js/grunt/**/*",
+    "src/kite/js/grunt/**/*",
+  ],
+
+  "files": [
+    "../perennial-alias/js/phet-types.d.ts",
+    "../perennial-alias/js/phet-types-module.d.ts",
+    "../perennial-alias/node_modules/@types/jquery/index.d.ts",
+    "../perennial-alias/node_modules/@types/lodash/index.d.ts",
+    "../perennial-alias/node_modules/@types/p2/index.d.ts",
+    "../perennial-alias/node_modules/@types/pako/index.d.ts",
+    "../perennial-alias/node_modules/@types/qunit/index.d.ts",
+    "../perennial-alias/node_modules/@types/react/index.d.ts",
+    "../perennial-alias/node_modules/@types/react-dom/index.d.ts",
+    "../perennial-alias/node_modules/@types/three/index.d.ts",
+    "../perennial-alias/node_modules/@webgpu/types/dist/index.d.ts"
+  ]
+}
