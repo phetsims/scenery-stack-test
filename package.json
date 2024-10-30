@@ -32,6 +32,10 @@
       "module": "./dist/alpenglow.js",
       "import": "./dist/alpenglow.js"
     },
+    "./assert": {
+      "module": "./dist/assert.js",
+      "import": "./dist/assert.js"
+    },
     "./axon": {
       "module": "./dist/axon.js",
       "import": "./dist/axon.js"

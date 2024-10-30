@@ -24,6 +24,7 @@
     /* actual entry points (barrel files mostly) */
     "src/index.ts",
     "src/alpenglow.ts",
+    "src/assert.ts",
     "src/axon.ts",
     "src/chipper.ts",
     "src/dot.ts",
