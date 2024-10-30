@@ -25,6 +25,7 @@ src/utterance-queue/
 src/vegas/
 
 third-party-licenses/
+dependencies.json
 
 tsconfig.tsbuildinfo
 

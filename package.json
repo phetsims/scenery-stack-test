@@ -20,7 +20,8 @@
   "files": [
     "dist",
     "src",
-    "third-party-licenses"
+    "third-party-licenses",
+    "dependencies.json"
   ],
   "exports": {
     ".": {

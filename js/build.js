@@ -45,7 +45,6 @@ import _ from 'lodash';
     'bamboo',
     'chipper',
     'dot',
-    'griddle',
     'joist',
     'kite',
     'mobius',
@@ -68,6 +67,35 @@ import _ from 'lodash';
   repos.forEach( repo => {
     wipeDir( `src/${repo}` );
   } );
+
+  // dependencies.json
+  {
+    const dependenciesJSON = {
+      comment: `# ${new Date().toString()}`
+    };
+
+    for ( const repo of repos ) {
+      if ( !fs.existsSync( `../${repo}` ) ) {
+        throw new Error( `repo not found: ${repo}` );
+      }
+
+      let sha = null;
+      let branch = null;
+
+      try {
+        sha = ( await execute( 'git', [ 'rev-parse', 'HEAD' ], `../${repo}` ) ).trim();
+        branch = ( await execute( 'git', [ 'rev-parse', '--abbrev-ref', 'HEAD' ], `../${repo}` ) ).trim();
+      }
+      catch( e ) {
+        // We support repos that are not git repositories, see https://github.com/phetsims/chipper/issues/1011
+        console.log( `Did not find git information for ${repo}` );
+      }
+
+      dependenciesJSON[ repo ] = { sha: sha, branch: branch };
+    }
+
+    fs.writeFileSync( './dependencies.json', JSON.stringify( dependenciesJSON, null, 2 ) );
+  }
 
   const badDirectoryNames = [
     'build',
