@@ -8,7 +8,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import './preload';
+// import './preload';
 
 const phet = self.phet;
 export default phet;

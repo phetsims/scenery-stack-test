@@ -20,7 +20,9 @@
   },
   // Entry points from build.json, see chipper/build.json
   "include": [
+    "src/index.ts",
     "src/scenery.ts",
+
     "src/phet-core/js/**/*",
     "src/axon/js/**/*",
     "src/dot/js/**/*",
