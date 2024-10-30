@@ -19,6 +19,7 @@
   },
   "files": [
     "dist",
+    "src",
     "third-party-licenses"
   ],
   "exports": {
@@ -26,9 +27,62 @@
       "module": "./dist/index.js",
       "import": "./dist/index.js"
     },
+
+    "./alpenglow": {
+      "module": "./dist/alpenglow.js",
+      "import": "./dist/alpenglow.js"
+    },
+    "./axon": {
+      "module": "./dist/axon.js",
+      "import": "./dist/axon.js"
+    },
+    "./dot": {
+      "module": "./dist/dot.js",
+      "import": "./dist/dot.js"
+    },
+    "./kite": {
+      "module": "./dist/kite.js",
+      "import": "./dist/kite.js"
+    },
+    "./mobius": {
+      "module": "./dist/mobius.js",
+      "import": "./dist/mobius.js"
+    },
+    "./phet-core": {
+      "module": "./dist/phet-core.js",
+      "import": "./dist/phet-core.js"
+    },
+    "./phetcommon": {
+      "module": "./dist/phetcommon.js",
+      "import": "./dist/phetcommon.js"
+    },
     "./scenery": {
       "module": "./dist/scenery.js",
       "import": "./dist/scenery.js"
+    },
+    "./scenery-phet": {
+      "module": "./dist/scenery-phet.js",
+      "import": "./dist/scenery-phet.js"
+    },
+    "./sun": {
+      "module": "./dist/sun.js",
+      "import": "./dist/sun.js"
+    },
+    "./tandem": {
+      "module": "./dist/tandem.js",
+      "import": "./dist/tandem.js"
+    },
+    "./tappi": {
+      "module": "./dist/tappi.js",
+      "import": "./dist/tappi.js"
+    },
+    "./twixt": {
+      "module": "./dist/twixt.js",
+      "import": "./dist/twixt.js"
+    },
+    "./vegas": {
+      "module": "./dist/vegas.js",
+      "import": "./dist/vegas.js"
     }
   },
   "dependencies": {
@@ -50,31 +104,5 @@
 
     "typescript": "~5.3.3",
     "grunt": "~1.5.3"
-  },
-  "phet": {
-    "supportedBrands": [
-      "phet",
-      "adapted-from-phet"
-    ],
-    "requirejsNamespace": "PHET_LIB",
-    "buildStandalone": true,
-    "requiresLodash": false,
-    "requiresJQuery": false,
-    "finalizeJS": "scenery.Utils.polyfillRequestAnimationFrame();",
-    "preload": [
-      "../sherpa/lib/jquery-2.1.0.min.js",
-      "../sherpa/lib/lodash-4.17.4.min.js",
-      "../sherpa/lib/linebreak-1.1.0.js",
-      "../sherpa/lib/flatqueue-1.2.1.js",
-      "../sherpa/lib/he-1.1.1.js",
-      "../sherpa/lib/TextEncoderLite-3c9f6f0.js",
-      "../sherpa/lib/base64-js-1.2.0.js",
-      "../sherpa/lib/seedrandom-2.4.2.js",
-      "../sherpa/lib/FileSaver-b8054a2.js",
-      "../sherpa/lib/three-r104.js",
-      "../query-string-machine/js/QueryStringMachine.js",
-      "../chipper/js/initialize-globals.js"
-    ],
-    "supportsOutputJS": true
   }
 }

@@ -1,11 +1,11 @@
 // Copyright 2024, University of Colorado Boulder
 
 /**
- * Exports for under /scenery
+ * Exports for under /kite
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
 
 import './preload.js';
 
-export * from './scenery/js/imports.js';
-export { default } from './scenery/js/scenery.js';
+export * from './kite/js/imports.js';
+export { default } from './kite/js/kite.js';

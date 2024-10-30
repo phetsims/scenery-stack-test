@@ -20,10 +20,25 @@
 
     "emitDeclarationOnly": false,
   },
-  // Entry points from build.json, see chipper/build.json
   "include": [
+    /* actual entry points (barrel files mostly) */
     "src/index.ts",
+    "src/alpenglow.ts",
+    "src/axon.ts",
+    "src/dot.ts",
+    "src/kite.ts",
+    "src/mobius.ts",
+    "src/phet-core.ts",
+    "src/phetcommon.ts",
     "src/scenery.ts",
+    "src/scenery-phet.ts",
+    "src/sun.ts",
+    "src/tandem.ts",
+    "src/tappi.ts",
+    "src/twixt.ts",
+    "src/vegas.ts",
+
+    /* types */
     "src/types/**/*",
 
     "src/minimal-preload.ts",
