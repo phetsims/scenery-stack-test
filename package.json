@@ -36,9 +36,17 @@
       "module": "./dist/axon.js",
       "import": "./dist/axon.js"
     },
+    "./chipper": {
+      "module": "./dist/chipper.js",
+      "import": "./dist/chipper.js"
+    },
     "./dot": {
       "module": "./dist/dot.js",
       "import": "./dist/dot.js"
+    },
+    "./joist": {
+      "module": "./dist/joist.js",
+      "import": "./dist/joist.js"
     },
     "./kite": {
       "module": "./dist/kite.js",
