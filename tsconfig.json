@@ -33,7 +33,7 @@
     "src/twixt/js/**/*",
     "src/bamboo/js/**/*",
     "src/nitroglycerin/js/**/*",
-//    "src/mobius/js/**/*",
+    "src/mobius/js/**/*",
 
     /* preloads */
     "src/assert/js/assert.*",
@@ -161,6 +161,7 @@
     "src/sherpa/lib/himalaya-1.1.0.js",
     "src/sherpa/js/fontawesome-4/checkEmptySolidShape.*",
     "src/sherpa/js/fontawesome-4/checkSquareOSolidShape.*",
+    "src/sherpa/js/fontawesome-4/warningSignShape.*",
 
     /* Sounds */
     "src/scenery-phet/sounds/**/*",
