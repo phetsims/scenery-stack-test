@@ -9,6 +9,8 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
@@ -22,6 +24,10 @@
   "include": [
     "src/index.ts",
     "src/scenery.ts",
+    "src/types/**/*",
+
+    "src/minimal-preload.ts",
+    "src/preload.ts",
 
     "src/phet-core/js/**/*",
     "src/axon/js/**/*",

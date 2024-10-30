@@ -217,6 +217,11 @@ import _ from 'lodash';
     `export var Big = _Big_();`,
     `/**\n * @type Class\n */\nexport var Big = _Big_();`
   );
+  patch(
+    './src/scenery/js/nodes/RichText.ts',
+    `// @ts-expect-error - we should get a string from this`,
+    ``
+  );
 
   console.log( 'running tsc' );
   await execute( '../perennial-alias/node_modules/typescript/bin/tsc', [ '-b' ], '.' );
