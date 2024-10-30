@@ -31,6 +31,9 @@
     "src/tambo/js/**/*",
     "src/sun/js/**/*",
     "src/twixt/js/**/*",
+    "src/bamboo/js/**/*",
+    "src/nitroglycerin/js/**/*",
+//    "src/mobius/js/**/*",
 
     /* preloads */
     "src/assert/js/assert.*",
@@ -128,7 +131,7 @@
     "src/vegas/js/AllLevelsCompletedNode.*",
     "src/vegas/js/ElapsedTimeNode.*",
     "src/vegas/js/FiniteStatusBar.*",
-//    "src/vegas/js/GameAudioPlayer.*",
+    "src/vegas/js/GameAudioPlayer.*",
     "src/vegas/js/GameTimer.*",
     "src/vegas/js/InfiniteStatusBar.*",
     "src/vegas/js/LevelCompletedNode.*",
@@ -141,6 +144,18 @@
     "src/vegas/js/VegasStrings.*",
     "src/vegas/js/getGameLevelsSchema.*",
     "src/vegas/js/vegasQueryParameters.*",
+
+    /* tappi allowlist */
+    "src/tappi/js/tappi.*",
+    "src/tappi/js/tracking/VibrationTestEvent.*",
+    "src/tappi/js/tracking/VibrationTestEventRecorder.*",
+    "src/tappi/js/tracking/VibrationTestInputListener.*",
+    "src/tappi/js/view/VibrationChart.*",
+    "src/tappi/js/view/VibrationIndicator.*",
+    "src/tappi/js/ContinuousPatternVibrationController.*",
+    "src/tappi/js/VibrationManageriOS.*",
+    "src/tappi/js/VibrationPatterns.*",
+    "src/tappi/js/vibrationManager.*",
 
     /* Sherpa allowlist */
     "src/sherpa/lib/himalaya-1.1.0.js",
@@ -171,6 +186,8 @@
     "src/sun/js/sun-tests.*",
     "src/twixt/js/twixt-tests.*",
     "src/twixt/js/**/*Tests.ts",
+    "src/bamboo/js/**/*Tests.ts",
+    "src/bamboo/js/bamboo-tests.*",
 
     /* Mains */
     "src/dot/js/dot-main.*",
@@ -189,15 +206,26 @@
     "src/sun/js/main.*",
     "src/twixt/js/twixt-main.*",
     "src/twixt/js/main.*",
+    "src/bamboo/js/bamboo-main.*",
+    "src/bamboo/js/main.*",
+    "src/nitroglycerin/js/nitroglycerin-main.*",
+    "src/nitroglycerin/js/main.*",
+    "src/mobius/js/mobius-main.*",
+    "src/mobius/js/main.*",
 
     /* Demos */
     "src/sun/js/demo/**/*",
     "src/tambo/js/demo/**/*",
     "src/twixt/js/demo/**/*",
+    "src/bamboo/js/demo/**/*",
+    "src/nitroglycerin/js/demo/**/*",
+    "src/mobius/js/demo/**/*",
 
     /* Incompatible */
     "src/sun/js/Dialog.*",
     "src/sun/js/Popupable.*",
+    "src/mobius/js/getAngledIcon.*",
+    "src/mobius/js/MobiusScreenView.*",
 
     /* Bad license */
     "src/sun/js/MenuItem.*",
