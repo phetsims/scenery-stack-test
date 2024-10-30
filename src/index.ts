@@ -5,10 +5,7 @@
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
 
-/* eslint-disable */
-// @ts-nocheck
-
-// import './preload';
+import './preload.js';
 
 const phet = self.phet;
 export default phet;

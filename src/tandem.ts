@@ -6,6 +6,8 @@
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
 
+import './minimal-preload.js';
+
 export { default as CouldNotYetDeserializeError } from './tandem/js/CouldNotYetDeserializeError.js';
 export { default as DescriptionRegistry } from './tandem/js/DescriptionRegistry.js';
 export { default as DynamicTandem } from './tandem/js/DynamicTandem.js';

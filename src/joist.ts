@@ -6,6 +6,8 @@
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
 
+import './preload.js';
+
 export { default as joist } from './joist/js/joist.js';
 export { default as packageJSON } from './joist/js/packageJSON.js';
 
